@@ -149,7 +149,7 @@ def wd_correction(h, alpha_sq):
 wd_alpha = 0.36
 wd_alpha_sq = ScalarType(wd_alpha**2)
 
-# weak form for dg implemetation
+# weak form with the boundary condition weakly for dg implemetation
 def weak_form(U, U_prev, V_test, wd=True):
     h, ux, uy = U
     h_prev, ux_prev, uy_prev = U_prev
