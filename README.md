@@ -63,16 +63,18 @@ The repository contains three main files in different working directories. Each 
 ### Test 1 : SWEs in 1D -- Nonbreaking Wave Propagation Over a Horizontal Plane
 
 #### Case 1 : In a slightly higher frictional area(rural case)
-Directory: FEniCS_Landlab/SWE_1D_FVMtoFEM
-Run the script:
+`Directory:` FEniCS_Landlab/SWE_1D_FVMtoFEM
+
+`Run the script:`
 
 ```sh
 cd FEniCS_Landlab/SWE_1D_FVMtoFEM
 python swe1D_Test1_Case1.py
 ```
 #### Case 2 : In a slightly lower frictional area(urbun case)
-Directory: FEniCS_Landlab/SWE_1D_FVMtoFEM
-Run the script:
+`Directory:` FEniCS_Landlab/SWE_1D_FVMtoFEM
+
+`Run the script:`
 
 ```sh
 cd FEniCS_Landlab/SWE_1D_FVMtoFEM
@@ -80,8 +82,9 @@ python swe1D_Test1_Case2.py
 ```
 
 ### Test 2 : SWEs on a 2D Sloped Beach (Continuous Galerkin)
-Directory: FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_CG
-Run the script:
+`Directory:` FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_CG
+
+`Run the script:`
 
 ```sh
 cd FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_CG
@@ -89,8 +92,9 @@ python swe2d_sloped_beach_cg_main.py
 ```
 
 ### Test 3 : SWEs on a 2D Sloped Beach (Discontinuous Galerkin)
-Directory: FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_DG
-Run the script:
+`Directory:` FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_DG
+
+`Run the script:`
 
 ```sh
 cd FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_DG
