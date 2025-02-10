@@ -50,7 +50,6 @@ V0, _ = V.sub(0).collapse()
 z = fem.Function(V0) 
 z.interpolate(lambda x: 5.0 / 13800 * (13800 - x[0]))
 x = domain.geometry.x
-x[:, 2] = z.x.array
 
 # initializing current functions with zeros as dry bed
 h.interpolate(lambda x: np.full_like(x[0], 0.0))
@@ -150,17 +149,17 @@ for step in range(num_steps + 1):
 
     # Perform computations at specific time steps
     if step in desired_steps:
+        print(f"Time step {step}, Time {t:.2f} s")
         # Compute mass conservation residuals
         residual = mass_conservation_residual(h, ux, uy, h_prev, ux_prev, uy_prev, Lx / nx, Ly / ny, dt, maps)
-        print(f"Step {step}, Mass Conservation Residual: {np.linalg.norm(residual)}")
+        print(f"Mass Conservation Residual: {np.linalg.norm(residual)}")
 
         # Compute inflow and outflow rates
         inflow, outflow = compute_flux(h, ux, uy, domain)
 
         # Print flux: inflow and outflow details
-        print(f"Time step {step}, Time {t:.2f} s")
         print(f"Inflow rate: {inflow:.6f}, Outflow rate: {outflow:.6f}")
-        print(f"Net flux (should be close to zero): {inflow - outflow:.6f}")
+        print(f"Net flux: {inflow - outflow:.6f}")
 
         # Extract field values from finite element solution
         z_values = z.x.array
