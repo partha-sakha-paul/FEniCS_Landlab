@@ -30,7 +30,7 @@ To run a Jupyter Notebook using the nightly image in Docker, run:
 ```sh
 docker run --init -ti -p 8888:8888 dolfinx/lab:nightly
 ```
-Then, open http://localhost:8888 in your browser.
+Then, open the address start with <http://localhost:8888> in the browser.
 
 ### 4. Enter the Running Docker Container Before Cloning the Repo
 First, find the container ID using:
