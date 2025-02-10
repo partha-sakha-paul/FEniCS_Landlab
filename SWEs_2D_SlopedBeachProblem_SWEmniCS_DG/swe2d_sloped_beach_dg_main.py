@@ -59,7 +59,7 @@ x = domain.geometry.x
 W = fem.Function(V)
 h, ux, uy = W.split()
 
-# initializing current functions with zeros as dry bed
+# initializing current functions with zeros as dry bed and still water
 h.interpolate(lambda x: np.full_like(x[0], 0.0))
 ux.interpolate(lambda x: np.full_like(x[0], 0.0))
 uy.interpolate(lambda x: np.full_like(x[0], 0.0))
@@ -68,22 +68,26 @@ uy.interpolate(lambda x: np.full_like(x[0], 0.0))
 W_prev = fem.Function(V)
 h_prev, ux_prev, uy_prev = W_prev.split()
 
-# initializing previous functions with zeros as dry bed
+# initializing previous functions with zeros as dry bed and still water
 h_prev.interpolate(lambda x: np.full_like(x[0], 0.0))
 ux_prev.interpolate(lambda x: np.full_like(x[0], 0.0))
 uy_prev.interpolate(lambda x: np.full_like(x[0], 0.0))
 
+# functions for previous of previous time step: required for BDF2
 W_prevprev = fem.Function(V)  
 h_prevprev, ux_prevprev, uy_prevprev = W_prevprev.split()
 
+# functions for open boundary conditions and initialization as of dry bed and still water
 W_open = fem.Function(V)
 h_open, ux_open, uy_open = W_open.split()
 h_open.interpolate(lambda x: np.full_like(x[0], 0.000))
 ux_open.interpolate(lambda x: np.full_like(x[0], 0.0))
 uy_open.interpolate(lambda x: np.full_like(x[0], 0.0))
 
+# measure ds for boundary integration using facet tags and extracting dofs of h in open boundary for tidal updating
 ds, sub_dofs_h_open_left = initialize_boundary_conditions(V, W_open, domain)
 
+# Testfunction for the Weak form
 V_test = TestFunction(V)
 
 # Visualization set up

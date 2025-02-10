@@ -45,6 +45,6 @@ def plot_station_timeseries(time_series_data, station_coords):
         plt.legend()
 
         plt.tight_layout()
-        plt.savefig(f"station_{coord}_timeseries.png")  # Save plot as image
+        plt.savefig(f"station_{coord}_timeseries_slopeBeach_CG.png")  # Save plot as image
         plt.show()
     print('Successfully created stations images')
