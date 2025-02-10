@@ -6,7 +6,7 @@ This repository contains code for solving the **1D & 2D Shallow Water Equations*
     Docker Desktop
     Dolfinx 0.10.0.0
     Numpy
-    Matplotlib# FEniCS_Landlab - Solving 2D Shallow Water Equations
+    Matplotlib
 
 
 ## Installation and Setup
@@ -56,13 +56,43 @@ To clone the repository, run in the current root:
 ```sh
 git clone https://github.com/partha-sakha-paul/FEniCS_Landlab.git
 ```
-Change to the working directory:
+
+## Running the Code
+The repository contains three main files in different working directories. Each file corresponds to a specific Shallow Water Equations (SWEs in 1D and 2D(CG and DG)) test case.
+
+### Test 1 : SWEs in 1D -- Nonbreaking Wave Propagation Over a Horizontal Plane
+
+#### Case 1 : In a slightly higher frictional area(rural case)
+Directory: FEniCS_Landlab/SWE_1D_FVMtoFEM
+Run the script:
+
+```sh
+cd FEniCS_Landlab/SWE_1D_FVMtoFEM
+python swe1D_Test1_Case1.py
+```
+#### Case 2 : In a slightly lower frictional area(urbun case)
+Directory: FEniCS_Landlab/SWE_1D_FVMtoFEM
+Run the script:
+
+```sh
+cd FEniCS_Landlab/SWE_1D_FVMtoFEM
+python swe1D_Test1_Case2.py
+```
+
+### Test 2 : SWEs on a 2D Sloped Beach (Continuous Galerkin)
+Directory: FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_CG
+Run the script:
 
 ```sh
 cd FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_CG
+python swe2d_sloped_beach_cg_main.py
 ```
-Run the main script:
+
+### Test 3 : SWEs on a 2D Sloped Beach (Discontinuous Galerkin)
+Directory: FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_DG
+Run the script:
 
 ```sh
-python swe2d_sloped_beach_cg_main.py
+cd FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_DG
+python swe2d_sloped_beach_dg_main.py
 ```
