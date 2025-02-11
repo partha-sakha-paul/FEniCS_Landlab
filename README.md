@@ -5,8 +5,9 @@ This repository contains code for solving the **1D & 2D Shallow Water Equations*
 ## Requirements:
     Docker Desktop
     Dolfinx 0.10.0.0
-    Numpy
-    Matplotlib
+    numpy
+    matplotlib
+    imageio
 
 
 ## Installation and Setup
