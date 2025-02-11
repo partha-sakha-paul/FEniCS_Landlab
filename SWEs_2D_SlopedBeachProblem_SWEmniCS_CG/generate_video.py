@@ -2,7 +2,7 @@
 # !pip install imageio[ffmpeg]
 import imageio.v2 as imageio
 
-def generate_video(output_filename="simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4", fps=12):
+def generate_video(output_filename="simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4", fps=15):
     """
     Generate a video from simulation frames.
 

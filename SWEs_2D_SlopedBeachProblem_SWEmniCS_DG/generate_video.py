@@ -4,7 +4,7 @@
 
 import imageio.v2 as imageio  # Import imageio for handling image sequences
 
-def generate_video(output_filename="simulation_wetdry_ramp_weakform_as_swemnics_dg.mp4", fps=12):
+def generate_video(output_filename="simulation_wetdry_ramp_weakform_as_swemnics_dg.mp4", fps=15):
     """
     Generates a video from a sequence of simulation frames.
 
