@@ -113,26 +113,37 @@ python main.py
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(9000%2C%203650)_timeseries_exp_without_bathymetry_CG.png" alt="Output 1" width="250">
-      <br><b>Figure 1: At station (9000, 3650)</b>
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(9000%2C%203650)_timeseries_exp_without_bathymetry_CG.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(9000%2C%203650)_timeseries_exp_without_bathymetry_CG.png" alt="Output 1" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(9000%2C%203650)_timeseries_exp_without_bathymetry_CG.png">Figure 1: At station (9000, 3650)</a></b>
     </td>
     <td align="center">
-      <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(11000%2C%203650)_timeseries_exp_without_bathymetry_CG.png" alt="Output 2" width="250">
-      <br><b>Figure 2: At station (11000, 3650)</b>
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(11000%2C%203650)_timeseries_exp_without_bathymetry_CG.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(11000%2C%203650)_timeseries_exp_without_bathymetry_CG.png" alt="Output 2" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(11000%2C%203650)_timeseries_exp_without_bathymetry_CG.png">Figure 2: At station (11000, 3650)</a></b>
     </td>
     <td align="center">
-      <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(13500%2C%203650)_timeseries_exp_without_bathymetry_CG.png" alt="Output 3" width="250">
-      <br><b>Figure 3: At station (13800, 3650)</b>
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(13500%2C%203650)_timeseries_exp_without_bathymetry_CG.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(13500%2C%203650)_timeseries_exp_without_bathymetry_CG.png" alt="Output 3" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(13500%2C%203650)_timeseries_exp_without_bathymetry_CG.png">Figure 3: At station (13500, 3650)</a></b>
     </td>
     <td align="center">
       <video width="250" controls>
-        <source src="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/videos/simulation.mp4" type="video/mp4">
+        <source src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/simulation_exp_without_bathymetry_CG.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <br><b>Video: Full Simulation</b>
+      <br>
+      <b>🎥 <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/simulation_exp_without_bathymetry_CG.mp4">Video: Full Simulation</a></b>
     </td>
   </tr>
 </table>
+
 
 
 ### ✅ Test 3 : SWEs on a 2D Sloped Beach (`Continuous Galerkin`)
