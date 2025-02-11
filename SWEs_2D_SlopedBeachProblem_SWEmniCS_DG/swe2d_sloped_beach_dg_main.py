@@ -14,7 +14,7 @@ import os
 # import necessary functions
 from domain import create_domain
 from flux import compute_flux
-# from mass_conservation import mass_conservation_residual
+from mass_conservation import mass_conservation_residual
 from domain import create_function_space
 from functions_at_vertices import find_values_at_vertices
 from weak_form import weak_form
@@ -166,10 +166,14 @@ for step in range(num_steps + 1):
     #     print(f"Indices with NaN: {nan_indices}")
     #     print(f"Corresponding Residual Values: {F_vec.array[nan_indices]}")
     
+    # Compute mass conservation residuals
+    residual = mass_conservation_residual(h, ux, uy, h_prev, ux_prev, uy_prev, Lx / nx, Ly / ny, dt, maps)
+    
     if step in desired_steps:
         # Compute inflow and outflow fluxes
         inflow, outflow = compute_flux(h, ux, uy, domain)
         print(f"Time step {step}, Time {t:.2f} s")
+        print(f"Mass Conservation Residual: {np.linalg.norm(residual)}")
         print(f"Residual Norm: {residual_norm}")
         print(f"Inflow rate: {inflow:.6f}, Outflow rate: {outflow:.6f}")
         print(f"Net flux: {inflow - outflow:.6f}")
@@ -225,9 +229,14 @@ for step in range(num_steps + 1):
             scalar_bar_args={"title": "Water Depth (h)"}
         )
         
-        # Add time text annotation
-        plotter.add_text(f"Time: {t}s", position="upper_left", font_size=12)
-        
+        # Add text annotations for inflow, outflow, and net flux
+        plotter.add_text(
+            f"Inflow: {inflow:.6f}\nOutflow: {outflow:.6f}\nNet flux: {inflow - outflow:.6f}", 
+            position="lower_left", font_size=8)
+
+        # Add step information and residual error text
+        plotter.add_text(f"Step: {step}, Time: {t:.2f}s\nMass Conservation Residual: {np.linalg.norm(residual)}", font_size=8)
+
         # Save screenshot of the current frame
         filename = f"frames/frame_{step:04d}.png"
         plotter.screenshot(filename)
