@@ -75,12 +75,16 @@ git clone https://github.com/partha-sakha-paul/FEniCS_Landlab.git
 ```
 
 ## 🐬 Running the Code
-The repository contains three main files in different working directories. Each file corresponds to a specific Shallow Water Equations (SWEs in 1D and 2D(CG and DG)) test case.
+📒The repository contains five main files in different working directories. Each file corresponds to a specific Shallow Water Equations (SWEs in 1D and 2D(CG and DG)) test case.
 
 ### ✅ Test 1 : SWEs in 1D -- Nonbreaking Wave Propagation Over a Horizontal Plane
 
 #### Case 1 : In a slightly higher frictional area(`rural case`)
 `Directory:` FEniCS_Landlab/SWE_1D_FVMtoFEM
+
+`Details:` This experiment consists of a wave propagation over a horizontal plane that is initially dry by assuming a constant velocity distribution over the direction of wave propagation with the moving boundary condition h(ut, t) = 0.
+
+    Parameters: n = 0.01(higher friction), u_const = 0.4(constant velocity in x direction) -- Figure 1
 
 `Run the script:`
 
@@ -90,6 +94,10 @@ python swe1D_Test1_Case1.py
 ```
 #### Case 2 : In a slightly lower frictional area(`urbun case`)
 `Directory:` FEniCS_Landlab/SWE_1D_FVMtoFEM
+
+`Details:` Same as Case 1 but with different parameters.
+
+    Parameters: n = 0.005(lower friction), u_const = 0.635(constant velocity in x direction) -- Figure 2
 
 `Run the script:`
 
