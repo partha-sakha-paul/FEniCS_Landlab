@@ -226,7 +226,7 @@ for step in range(num_steps + 1):
             cmap="viridis", 
             show_edges=True, 
             show_scalar_bar=True,
-            scalar_bar_args={"title": "Water Depth (h)"}
+            scalar_bar_args={"title": "Total Surface Elevation (h + z): DG"}
         )
         
         # Add text annotations for inflow, outflow, and net flux

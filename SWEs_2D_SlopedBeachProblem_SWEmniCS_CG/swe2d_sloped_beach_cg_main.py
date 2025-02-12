@@ -191,7 +191,7 @@ for step in range(num_steps + 1):
             cmap="viridis",
             show_edges=True,
             show_scalar_bar=True,
-            scalar_bar_args={"title": "Total Surface Elevation (h + z)"}
+            scalar_bar_args={"title": "Total Surface Elevation (h + z): CG"}
         )
 
         # Compute arrow vectors for velocity visualization
