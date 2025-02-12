@@ -129,6 +129,8 @@ python swe1D_Test1_Case2.py
 ### ✅ Test 2 : SWEs 2D - Without Bathymetry experiment(`wetdry = True`) with tidal wave(as in `Test 3 & 4`)
 `Directory:` FEniCS_Landlab/SWEs2D_exp_without_bathymetry
 
+`Details:` This experiment evaluates SWEMniCS' wetting and drying capability using Kärna’s α scheme with a `CG` approach on a `13,800 m × 7,200 m` water surface without bathymetry. The `initial` water surface is `flat`, and a `harmonic tide (2m amplitude, 12h period)` is applied at the `open left` boundary, while `other` boundaries are `walls`. The simulation runs for `7 days`, using Manning’s friction `0.02` s/m<sup>1/3</sup>, and records elevations and velocities at `x = 9000 m, 11,000 m, and 13,500 m.`  --  `(Figure 3, 4, 5)`
+
 `Run the script:`
 
 ```sh
@@ -177,6 +179,8 @@ python main.py
 ### ✅ Test 3 : SWEs on a 2D Sloped Beach (`Continuous Galerkin`)
 `Directory:` FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_CG
 
+`Details:` This test case evaluates SWEMniCS' wetting and drying capability using Kärna’s α scheme with a `CG` approach on a `13,800 m × 7,200 m` sloping beach. The `initial` water surface is `flat`, and a `harmonic tide (2m amplitude, 12h period)` is applied at the `open left` boundary, while `other` boundaries are `walls`. The simulation runs for `7 days`, using Manning’s friction `0.02` s/m<sup>1/3</sup>, and records elevations and velocities at `x = 9000 m, 11,000 m, and 13,500 m.`  --  `(Figure 6, 7, 8)`
+
 `Run the script:`
 
 ```sh
@@ -222,6 +226,8 @@ python swe2d_sloped_beach_cg_main.py
 
 ### ✅ Test 4 : SWEs on a 2D Sloped Beach (`Discontinuous Galerkin`)
 `Directory:` FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_DG
+
+`Details:` This test case evaluates SWEMniCS' wetting and drying capability using Kärna’s α scheme with a `DG` approach on a `13,800 m × 7,200 m` sloping beach. The `initial` water surface is `flat`, and a `harmonic tide (2m amplitude, 12h period)` is applied at the `open left` boundary, while `other` boundaries are `walls`. The simulation runs for `7 days`, using Manning’s friction `0.02` s/m<sup>1/3</sup>, and records elevations and velocities at `x = 9000 m, 11,000 m, and 13,500 m.`  --  `(Figure 9, 10, 11)`
 
 `Run the script:`
 
