@@ -98,6 +98,26 @@ cd FEniCS_Landlab/SWE_1D_FVMtoFEM
 python swe1D_Test1_Case2.py
 ```
 
+<h2 align="center">🌊 Simulation Results</h2>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs1D/water_depth_evolution_1D_Case1.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs1D/water_depth_evolution_1D_Case1.png" alt="Output 1" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs1D/water_depth_evolution_1D_Case1.png">Figure 1: Case-1 - Higher Frictional Area(Rural case)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs1D/water_depth_evolution_1D_Case2.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs1D/water_depth_evolution_1D_Case2.png" alt="Output 2" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs1D/water_depth_evolution_1D_Case2.png">Figure 2: Case-2 - Lower Frictional Area(Urban case)</a></b>
+  </tr>
+</table>
+
 ### ✅ Test 2 : SWEs 2D - Without Bathymetry experiment(`wetdry = True`) with tidal wave(as in `Test 3 & 4`)
 `Directory:` FEniCS_Landlab/SWEs2D_exp_without_bathymetry
 
@@ -117,21 +137,21 @@ python main.py
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(9000%2C%203650)_timeseries_exp_without_bathymetry_CG.png" alt="Output 1" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(9000%2C%203650)_timeseries_exp_without_bathymetry_CG.png">Figure 1: At station (9000, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(9000%2C%203650)_timeseries_exp_without_bathymetry_CG.png">Figure 3: At station (9000, 3650)</a></b>
     </td>
     <td align="center">
       <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(11000%2C%203650)_timeseries_exp_without_bathymetry_CG.png">
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(11000%2C%203650)_timeseries_exp_without_bathymetry_CG.png" alt="Output 2" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(11000%2C%203650)_timeseries_exp_without_bathymetry_CG.png">Figure 2: At station (11000, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(11000%2C%203650)_timeseries_exp_without_bathymetry_CG.png">Figure 4: At station (11000, 3650)</a></b>
     </td>
     <td align="center">
       <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(13500%2C%203650)_timeseries_exp_without_bathymetry_CG.png">
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(13500%2C%203650)_timeseries_exp_without_bathymetry_CG.png" alt="Output 3" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(13500%2C%203650)_timeseries_exp_without_bathymetry_CG.png">Figure 3: At station (13500, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(13500%2C%203650)_timeseries_exp_without_bathymetry_CG.png">Figure 5: At station (13500, 3650)</a></b>
     </td>
     <td align="center">
       <video width="250" controls>
@@ -156,6 +176,42 @@ cd FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_CG
 python swe2d_sloped_beach_cg_main.py
 ```
 
+<h2 align="center">🌊 Simulation Results</h2>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(9000%2C%203650)_timeseries_slopeBeach_cg.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(9000%2C%203650)_timeseries_slopeBeach_cg.png" alt="Output 1" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href=""https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(9000%2C%203650)_timeseries_slopeBeach_cg.png>Figure 6: At station (9000, 3650)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(11000%2C%203650)_timeseries_slopeBeach_cg.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(11000%2C%203650)_timeseries_slopeBeach_cg.png" alt="Output 2" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(11000%2C%203650)_timeseries_slopeBeach_cg.png">Figure 7: At station (11000, 3650)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(13500%2C%203650)_timeseries_slopeBeach_cg.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(13500%2C%203650)_timeseries_slopeBeach_cg.png" alt="Output 3" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(13500%2C%203650)_timeseries_slopeBeach_cg.png">Figure 8: At station (13500, 3650)</a></b>
+    </td>
+    <td align="center">
+      <video width="250" controls>
+        <source src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <b>🎥 <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4">Video: Full Simulation</a></b>
+    </td>
+  </tr>
+</table>
+
 ### ✅ Test 4 : SWEs on a 2D Sloped Beach (`Discontinuous Galerkin`)
 `Directory:` FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_DG
 
@@ -165,3 +221,39 @@ python swe2d_sloped_beach_cg_main.py
 cd FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_DG
 python swe2d_sloped_beach_dg_main.py
 ```
+
+<h2 align="center">🌊 Simulation Results</h2>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_(9000%2C%203650)_timeseries_slopeBeach_DG.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_(9000%2C%203650)_timeseries_slopeBeach_DG.png" alt="Output 1" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_(9000%2C%203650)_timeseries_slopeBeach_DG.png">Figure 9: At station (9000, 3650)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_(11000%2C%203650)_timeseries_slopeBeach_DG.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_(11000%2C%203650)_timeseries_slopeBeach_DG.png" alt="Output 2" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_(11000%2C%203650)_timeseries_slopeBeach_DG.png">Figure 10: At station (11000, 3650)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_(13500%2C%203650)_timeseries_slopeBeach_DG.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_(13500%2C%203650)_timeseries_slopeBeach_DG.png" alt="Output 3" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_(13500%2C%203650)_timeseries_slopeBeach_DG.png">Figure 11: At station (13500, 3650)</a></b>
+    </td>
+    <td align="center">
+      <video width="250" controls>
+        <source src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/simulation_wetdry_ramp_weakform_as_swemnics_dg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <b>🎥 <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/simulation_wetdry_ramp_weakform_as_swemnics_dg.mp4">Video: Full Simulation</a></b>
+    </td>
+  </tr>
+</table>
