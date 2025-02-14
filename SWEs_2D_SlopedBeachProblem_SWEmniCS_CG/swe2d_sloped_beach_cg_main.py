@@ -139,6 +139,9 @@ for coord in station_coords:
 # Initialize a dictionary to store time series data for each station
 time_series_data = {coord: {"time": [], "h": [], "ux": [], "uy": []} for coord in station_coords}
 
+# Initialize global min/max before the simulation loop
+global_h_min, global_h_max = float("inf"), float("-inf")
+
 # Iterate over time steps
 for step in range(num_steps + 1):
     t = step * dt  # Compute current time
@@ -171,6 +174,10 @@ for step in range(num_steps + 1):
         # print(ux_values)
         # print(uy_values)
 
+        # Update global min/max with current time step data
+        global_h_min = min(global_h_min, np.min(h_values))
+        global_h_max = max(global_h_max, np.max(h_values))
+        
         # Assign values to PyVista mesh for visualization
         pv_mesh.point_data["Bed Elevation (z)"] = z_values
         pv_mesh.point_data["Water Depth (h)"] = h_values
@@ -181,6 +188,9 @@ for step in range(num_steps + 1):
         # Start PyVista's XVFB (virtual framebuffer) mode
         pv.start_xvfb()
 
+        # Define fixed color limits
+        vmin, vmax = 0, 5.5  # Set min and max values to manage the colorbar
+        
         # Warp the mesh by bed elevation for better visualization
         warped = pv_mesh.warp_by_scalar("Bed Elevation (z)")
 
@@ -191,7 +201,8 @@ for step in range(num_steps + 1):
             cmap="viridis",
             show_edges=True,
             show_scalar_bar=True,
-            scalar_bar_args={"title": "Total Surface Elevation (h + z): CG"}
+            scalar_bar_args={"title": "Total Surface Elevation (h + z): CG"},
+            clim=[vmin, vmax]  # Set fixed range
         )
 
         # Compute arrow vectors for velocity visualization
@@ -227,6 +238,9 @@ for step in range(num_steps + 1):
     h_prev.x.array[:] = h.x.array[:]
     ux_prev.x.array[:] = ux.x.array[:]
     uy_prev.x.array[:] = uy.x.array[:]
+    
+# Print or store the values for later analysis
+print(f"Overall Min h = {global_h_min}, Overall Max h = {global_h_max}")
 
 # Call the function to plot time series data for each station
 plot_station_timeseries(time_series_data, station_coords)
