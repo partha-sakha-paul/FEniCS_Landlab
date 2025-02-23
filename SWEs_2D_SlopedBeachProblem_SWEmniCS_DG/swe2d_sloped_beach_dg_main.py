@@ -306,7 +306,6 @@ for step in range(num_steps + 1):
     
     # Solve the nonlinear problem
     solver.solve(W)
-    # solve(W, weak_result, problem, domain, solver_parameters=params)
     W.x.scatter_forward()
     
     # Update previous time-step values
