@@ -32,7 +32,8 @@ def create_domain(Lx=13800.0, Ly=7200.0, nx=12, ny=6):
 
 def create_function_space(domain):
     """
-    Create a mixed finite element function space with three components.
+    Create a mixed finite element function space with two components: Scalar component for surface elevation and
+    Vector component for Velocities in x-y directions.
 
     Parameters:
     domain : dolfinx.mesh.Mesh
@@ -44,7 +45,7 @@ def create_function_space(domain):
     """
     # Define a mixed finite element with three DG(1) components
     element = basix.ufl.mixed_element(
-        [basix.ufl.element("DG", str(domain.ufl_cell()), 1)] * 3
+        [basix.ufl.element("DG", str(domain.ufl_cell()), 1), basix.ufl.element("DG", str(domain.ufl_cell()), 1, shape=(2,))]
     )
 
     # Create the function space on the given mesh

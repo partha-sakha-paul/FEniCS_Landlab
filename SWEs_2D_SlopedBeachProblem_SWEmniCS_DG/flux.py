@@ -2,13 +2,13 @@ from dolfinx.fem import assemble_scalar, form
 from ufl import dot, FacetNormal, Measure  
 import ufl
 
-def compute_flux(h, ux, uy, domain):
+def compute_flux(H, u, domain):
     """
     Computes inflow and outflow fluxes across the domain boundary.
 
     Parameters:
-    - h: Water height (scalar field).
-    - ux, uy: Velocity components in x and y directions.
+    - H: Water height (scalar field).
+    - u: Velocity vector field (contains both ux and uy).
     - domain: Finite element mesh domain.
 
     Returns:
@@ -19,7 +19,7 @@ def compute_flux(h, ux, uy, domain):
     identifying inflow (negative flux) and outflow (positive flux) separately.
     """
     n = FacetNormal(domain)  # Compute unit normal to the domain boundary
-    q = ufl.as_vector([h * ux, h * uy])  # Compute discharge vector (flux)
+    q = H * u  # Compute discharge vector (flux), where u contains (ux, uy)
     flux_integrand = dot(q, n)  # Compute normal flux component
 
     exterior_facet_measure = Measure("exterior_facet", domain=domain)  # Define exterior measure
