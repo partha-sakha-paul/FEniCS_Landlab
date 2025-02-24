@@ -46,8 +46,10 @@ def generate_plots():
 
     # Define station labels and variables
     station_labels = ["Station 1", "Station 2", "Station 3"]
-    variables = ["Water Surface Elevation", "X Velocity", "Y Velocity"]
-    
+    variables = ["Water Surface Elevation (m)", "X Velocity (m/s)", "Y Velocity (m/s)"]
+    # Define variable names without units for filenames
+    variable_names = ["water_surface_elevation", "x_velocity", "y_velocity"]  # Names without units
+
     # Organize data arrays
     FenLand_data = [FenLand_height, FenLand_x_vel, FenLand_y_vel]
     SWEmniCS_data = [SWEmniCS_height, SWEmniCS_x_vel, SWEmniCS_y_vel]
@@ -59,8 +61,8 @@ def generate_plots():
     # Loop through each station and save individual plots
     for i in range(3):  # 3 stations
         for j in range(3):  # 3 variables (height, x_vel, y_vel)
-            filename = f"station_{i+1}{variables[j].replace(' ', '').lower()}.png"
-            save_plot(time_days, FenLand_data[j][:, i], SWEmniCS_data[j][:, i], variables[j], 
+            filename = f"station_{i+1}_{variable_names[j]}.png"  # Clean filename
+            save_plot(time_days, FenLand_data[j][:1009, i], SWEmniCS_data[j][:, i], variables[j], 
                       f"{station_labels[i]} - {variables[j]}", FenLand_colors[i], SWEmniCS_colors[i], filename)
 
     print("All plots have been saved successfully!")
