@@ -193,36 +193,83 @@ python swe2d_sloped_beach_cg_main.py
 <table align="center">
   <tr>
     <td align="center">
-      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(9000%2C%203650)_timeseries_slopeBeach_cg.png">
-        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(9000%2C%203650)_timeseries_slopeBeach_cg.png" alt="Output 1" width="250">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_1_water_surface_elevation.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_1_water_surface_elevation.png" alt="Output 1" width="250">
       </a>
       <br>
-      <b>🖼️ <a href=""https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(9000%2C%203650)_timeseries_slopeBeach_cg.png>Figure 6: At station (9000, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_1_water_surface_elevation.png">Figure 6: At station (9000, 3650)</a></b>
     </td>
     <td align="center">
-      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(11000%2C%203650)_timeseries_slopeBeach_cg.png">
-        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(11000%2C%203650)_timeseries_slopeBeach_cg.png" alt="Output 2" width="250">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_1_x_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_1_x_velocity.png" alt="Output 2" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(11000%2C%203650)_timeseries_slopeBeach_cg.png">Figure 7: At station (11000, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_1_x_velocity.png">Figure 7: At station (9000, 3650)</a></b>
     </td>
     <td align="center">
-      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(13500%2C%203650)_timeseries_slopeBeach_cg.png">
-        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(13500%2C%203650)_timeseries_slopeBeach_cg.png" alt="Output 3" width="250">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_1_y_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_1_y_velocity.png" alt="Output 3" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_(13500%2C%203650)_timeseries_slopeBeach_cg.png">Figure 8: At station (13500, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_1_y_velocity.png">Figure 8: At station (9000, 3650)</a></b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_2_water_surface_elevation.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_2_water_surface_elevation.png" alt="Output 4" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_2_water_surface_elevation.png">Figure 9: At station (11000, 3650)</a></b>
     </td>
     <td align="center">
-      <video width="250" controls>
-        <source src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_2_x_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_2_x_velocity.png" alt="Output 5" width="250">
+      </a>
       <br>
-      <b>🎥 <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4">Video: Full Simulation</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_2_x_velocity.png">Figure 10: At station (11000, 3650)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_2_y_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_2_y_velocity.png" alt="Output 6" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_2_y_velocity.png">Figure 11: At station (11000, 3650)</a></b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_3_water_surface_elevation.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_3_water_surface_elevation.png" alt="Output 7" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_3_water_surface_elevation.png">Figure 12: At station (13500, 3650)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_3_x_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_3_x_velocity.png" alt="Output 8" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_3_x_velocity.png">Figure 13: At station (13500, 3650)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_3_y_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_3_y_velocity.png" alt="Output 9" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/station_3_y_velocity.png">Figure 14: At station (13500, 3650)</a></b>
     </td>
   </tr>
 </table>
+
+<h3 align="center">🎥 Full Simulation Video</h3>
+<p align="center">
+  <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4">
+    <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4" alt="Simulation Video" width="400">
+  </a>
+  <br>
+  <b>🎥 <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4">Video: Full Simulation</a></b>
+</p>
 
 ### ✅ Test 4 : SWEs on a 2D Sloped Beach (`Discontinuous Galerkin`)
 `Directory:` FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_DG
@@ -245,21 +292,21 @@ python swe2d_sloped_beach_dg_main.py
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_water_surface_elevation.png" alt="Output 1" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_water_surface_elevation.png">Figure 9: At station (9000, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_water_surface_elevation.png">Figure 15: At station (9000, 3650)</a></b>
     </td>
     <td align="center">
       <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_x_velocity.png">
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_x_velocity.png" alt="Output 2" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_x_velocity.png">Figure 10: At station (9000, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_x_velocity.png">Figure 16: At station (9000, 3650)</a></b>
     </td>
     <td align="center">
       <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_y_velocity.png">
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_y_velocity.png" alt="Output 3" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_y_velocity.png">Figure 11: At station (9000, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_1_y_velocity.png">Figure 17: At station (9000, 3650)</a></b>
     </td>
   </tr>
   <tr>
@@ -268,21 +315,21 @@ python swe2d_sloped_beach_dg_main.py
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_water_surface_elevation.png" alt="Output 4" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_water_surface_elevation.png">Figure 12: At station (11000, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_water_surface_elevation.png">Figure 18: At station (11000, 3650)</a></b>
     </td>
     <td align="center">
       <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_x_velocity.png">
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_x_velocity.png" alt="Output 5" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_x_velocity.png">Figure 13: At station (11000, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_x_velocity.png">Figure 19: At station (11000, 3650)</a></b>
     </td>
     <td align="center">
       <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_y_velocity.png">
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_y_velocity.png" alt="Output 6" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_y_velocity.png">Figure 14: At station (11000, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_2_y_velocity.png">Figure 20: At station (11000, 3650)</a></b>
     </td>
   </tr>
   <tr>
@@ -291,21 +338,21 @@ python swe2d_sloped_beach_dg_main.py
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_water_surface_elevation.png" alt="Output 7" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_water_surface_elevation.png">Figure 15: At station (13500, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_water_surface_elevation.png">Figure 21: At station (13500, 3650)</a></b>
     </td>
     <td align="center">
       <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_x_velocity.png">
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_x_velocity.png" alt="Output 8" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_x_velocity.png">Figure 16: At station (13500, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_x_velocity.png">Figure 22: At station (13500, 3650)</a></b>
     </td>
     <td align="center">
       <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_y_velocity.png">
         <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_y_velocity.png" alt="Output 9" width="250">
       </a>
       <br>
-      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_y_velocity.png">Figure 17: At station (13500, 3650)</a></b>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/station_3_y_velocity.png">Figure 23: At station (13500, 3650)</a></b>
     </td>
   </tr>
 </table>
