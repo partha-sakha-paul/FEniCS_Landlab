@@ -7,9 +7,9 @@ def load_csv_data():
     FenLand_x_vel_values = np.loadtxt("DG_x_vel.csv", delimiter=",")
     FenLand_y_vel_values = np.loadtxt("DG_y_vel.csv", delimiter=",")
 
-    SWEmniCS_height_values = np.loadtxt("Balzano_p1_wse.csv", delimiter=",")
-    SWEmniCS_x_vel_values = np.loadtxt("Balzano_p1_xvel.csv", delimiter=",")
-    SWEmniCS_y_vel_values = np.loadtxt("Balzano_p1_yvel.csv", delimiter=",")
+    SWEmniCS_height_values = np.loadtxt("Balzano_p1_wse_dg.csv", delimiter=",")
+    SWEmniCS_x_vel_values = np.loadtxt("Balzano_p1_xvel_dg.csv", delimiter=",")
+    SWEmniCS_y_vel_values = np.loadtxt("Balzano_p1_yvel_dg.csv", delimiter=",")
 
     return (FenLand_height_values, FenLand_x_vel_values, FenLand_y_vel_values,
             SWEmniCS_height_values, SWEmniCS_x_vel_values, SWEmniCS_y_vel_values)

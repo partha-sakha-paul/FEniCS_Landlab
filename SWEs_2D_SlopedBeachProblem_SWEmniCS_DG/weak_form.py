@@ -167,7 +167,7 @@ def make_Source(u, z, wd_alpha_sq, g, wd=True):
 
     return source
 
-def add_bcs_to_weak_form(u, W_open, z, g, wd_alpha_sq, domain, ds, F_u, F_u_open, p, F, wd=True):
+def add_bcs_to_weak_form(u, u_open, z, g, wd_alpha_sq, domain, ds, F_u, F_u_open, v, F, wd=True):
     """Apply boundary conditions to the weak form of the shallow water equations.
 
     Parameters:
@@ -180,7 +180,7 @@ def add_bcs_to_weak_form(u, W_open, z, g, wd_alpha_sq, domain, ds, F_u, F_u_open
     ds: Boundary integration measure.
     F_u: Flux tensor computed using the current state variables.
     F_u_open: Flux tensor computed using the external state at open boundary.
-    p: Test function.
+    v: Test function.
     F: Weak form equation that will be modified.
     wd (bool, optional): Whether to apply wetting and drying correction (default: True).
 
@@ -192,7 +192,7 @@ def add_bcs_to_weak_form(u, W_open, z, g, wd_alpha_sq, domain, ds, F_u, F_u_open
 
     # Get standardized solution variables
     H, ux, uy = get_standard_vars(u, z, wd_alpha_sq, form='H', wd=True)
-    H_ex, ux_ex, uy_ex = get_standard_vars(W_open, z, wd_alpha_sq, form='H', wd=True)
+    H_ex, ux_ex, uy_ex = get_standard_vars(u_open, z, wd_alpha_sq, form='H', wd=True)
 
     # Compute velocity vector and normal velocity component
     vel = as_vector((ux, uy))
@@ -201,9 +201,6 @@ def add_bcs_to_weak_form(u, W_open, z, g, wd_alpha_sq, domain, ds, F_u, F_u_open
 
     # Small threshold to avoid division by zero
     eps = 1e-16
-
-    # Term for weak formulation involving external boundary values
-    b = -inner(as_vector(([H_ex, H_ex * ux_ex], [ux_ex, H_ex], [uy_ex, H_ex])), grad(p)) * dx
 
     # Compute velocity norm safely
     vnorm = conditional(dot(vel, vel) > eps, sqrt(dot(vel, vel)), 0.0)
@@ -227,14 +224,14 @@ def add_bcs_to_weak_form(u, W_open, z, g, wd_alpha_sq, domain, ds, F_u, F_u_open
     C_open = vnorm + sqrt(g * conditional(H_ex > H, H_ex, H))
 
     # Apply open boundary conditions to the weak form
-    F += dot(0.5 * dot(F_u_open, n) + 0.5 * dot(F_u, n), p) * ds(2) + dot(0.5 * C_open * jump_Q_open, p) * ds(2)
+    F += dot(0.5 * dot(F_u_open, n) + 0.5 * dot(F_u, n), v) * ds(2) + dot(0.5 * C_open * jump_Q_open, v) * ds(2)
 
     # Apply wall boundary conditions to the weak form
-    F += dot(0.5 * dot(F_u, n) + 0.5 * dot(Fu_wall_ext, n), p) * ds(1) + dot(0.5 * C_wall * jump_Q_wall, p) * ds(1)
+    F += dot(0.5 * dot(F_u, n) + 0.5 * dot(Fu_wall_ext, n), v) * ds(1) + dot(0.5 * C_wall * jump_Q_wall, v) * ds(1)
 
     return F
 
-def dg_flux(u, z, g, wd_alpha_sq, domain, F_u, p, F, Q, wd=True):
+def dg_flux(u, z, g, wd_alpha_sq, domain, F_u, v, F, Q, wd=True):
     """Compute the discontinuous Galerkin (DG) flux for the shallow water equations.
 
     Parameters:
@@ -244,7 +241,7 @@ def dg_flux(u, z, g, wd_alpha_sq, domain, F_u, p, F, Q, wd=True):
     wd_alpha_sq (float): Wetting and drying correction factor.
     domain: Computational domain for the problem.
     F_u: Flux tensor computed using the current state variables.
-    p: Test function.
+    v: Test function.
     F: Weak form equation that will be updated with the DG flux.
     Q: Quantity for jump conditions.
     wd (bool, optional): Whether to apply wetting and drying correction (default: True).
@@ -279,7 +276,7 @@ def dg_flux(u, z, g, wd_alpha_sq, domain, F_u, p, F, Q, wd=True):
     flux = dot(avg(F_u), n('+')) + 0.5 * C * jump(Q)
 
     # Add the flux contribution to the weak form equation
-    F += inner(flux, jump(p)) * dS
+    F += inner(flux, jump(v)) * dS
 
     return F
 
@@ -326,7 +323,7 @@ def weak_form(U, U_prev, U_prevprev, V_test, W_open, domain, z, dt, ds, g, manni
     n = ufl.FacetNormal(domain)
 
     # Define test function as a vector
-    p = as_vector((v_h, v_ux, v_uy))
+    v = as_vector((v_h, v_ux, v_uy))
 
     # Compute flux variables for current and previous states
     Q = as_vector(get_standard_vars(U, z, wd_alpha_sq, form='flux', wd=True))
@@ -341,28 +338,28 @@ def weak_form(U, U_prev, U_prevprev, V_test, W_open, domain, z, dt, ds, g, manni
 
     # Debugging print statement to check solution array
     # print('U for Fu', U.sub(0).x.array)
-
+    U_open = as_vector((H_open, U[1], U[2]))
     # Compute the flux tensor for the state variables
     F_u = make_Fu(U, z, wd_alpha_sq, g, wd=True)
-    F_u_open = make_Fu(W_open, z, wd_alpha_sq, g, wd=True)
+    F_u_open = make_Fu(U_open, z, wd_alpha_sq, g, wd=True)
 
     # Compute the source term (gravitational and frictional forces)
     S = make_Source(U, z, wd_alpha_sq, g, wd=True)
 
     # Initialize weak form with the divergence of the flux tensor
-    F = -inner(F_u, grad(p)) * dx
+    F = -inner(F_u, grad(v)) * dx
 
     # Apply boundary conditions to the weak form
-    F = add_bcs_to_weak_form(U, W_open, z, g, wd_alpha_sq, domain, ds, F_u, F_u_open, p, F, wd=True)
+    F = add_bcs_to_weak_form(U, U_open, z, g, wd_alpha_sq, domain, ds, F_u, F_u_open, v, F, wd=True)
 
     # Add source term contribution
-    F += inner(S, p) * dx
+    F += inner(S, v) * dx
 
     # Add time derivative term
-    F += inner(dQdt, p) * dx
+    F += inner(dQdt, v) * dx
 
     # Apply Discontinuous Galerkin (DG) flux formulation
-    F = dg_flux(U, z, g, wd_alpha_sq, domain, F_u, p, F, Q, wd=True)
+    F = dg_flux(U, z, g, wd_alpha_sq, domain, F_u, v, F, Q, wd=True)
 
     # Print norm of the assembled weak form for debugging at the first time step
     if step == 0:
