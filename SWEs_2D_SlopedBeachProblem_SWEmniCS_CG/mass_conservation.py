@@ -1,42 +1,38 @@
 import numpy as np
 
-def mass_conservation_residual(h, ux, uy, h_prev, ux_prev, uy_prev, dx, dy, dt, maps):
+def mass_conservation_residual(H, u, H_prev, u_prev, dx, dy, dt, maps):
     """
-    Compute the residual of the mass conservation equation.
+    Computes the mass conservation residual for the shallow water equations with a mixed DG(1) element.
 
     Parameters:
-    - h: Current water depth field.
-    - ux: Current x-component of velocity.
-    - uy: Current y-component of velocity.
-    - h_prev: Previous time step water depth.
-    - ux_prev: Previous time step x-component of velocity.
-    - uy_prev: Previous time step y-component of velocity.
-    - dx: Grid spacing in the x-direction.
-    - dy: Grid spacing in the y-direction.
+    - H: Current time step water depth (dolfinx.fem.Function).
+    - u: Current time step velocity vector (dolfinx.fem.Function, shape=(2,)).
+    - H_prev: Previous time step water depth.
+    - u_prev: Previous time step velocity vector.
+    - dx, dy: Spatial step sizes in x and y directions.
     - dt: Time step size.
-    - maps: List of index mappings for extracting field values.
+    - maps: Index mappings for extracting DOF values from functions.
 
     Returns:
-    - residual: Residual of the mass conservation equation.
+    - residual: Numpy array of residual values representing the mass conservation error.
     """
 
-    # Extract values from function arrays based on given maps
-    h_values = h.x.array[maps[0]]
-    ux_values = ux.x.array[maps[1]]
-    uy_values = uy.x.array[maps[2]]
+    # Extract values of H and H_prev using maps[0]
+    H_values = H.x.array[maps[0]]
+    H_prev_values = H_prev.x.array[maps[0]]
 
-    h_prev_values = h_prev.x.array[maps[0]]
-    ux_prev_values = ux_prev.x.array[maps[1]]
-    uy_prev_values = uy_prev.x.array[maps[2]]
+    # Extract velocity components from the vector field ux and uy separately using maps[1]
+    ux_values = u.x.array[maps[1][::2]]  # Every first element (x-component)
+    uy_values = u.x.array[maps[1][1::2]]  # Every second element (y-component)
 
-    # Initialize residual array with the same shape as h_values
-    residual = np.zeros_like(h_values)
+    # Initialize residual array
+    residual = np.zeros_like(H_values)
 
-    # Compute temporal change in water depth
-    residual += (h_values - h_prev_values) / dt
+    # Compute time derivative term
+    residual += (H_values - H_prev_values) / dt
 
-    # Compute spatial derivatives using numerical gradients
-    residual += np.gradient(h_values * ux_values, dx)  
-    residual += np.gradient(h_values * uy_values, dy)  
+    # Compute spatial derivative terms using finite difference approximations
+    residual += np.gradient(H_values * ux_values, dx)
+    residual += np.gradient(H_values * uy_values, dy)
 
     return residual

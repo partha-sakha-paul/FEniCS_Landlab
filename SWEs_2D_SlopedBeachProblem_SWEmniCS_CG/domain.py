@@ -37,8 +37,10 @@ def create_function_space(domain):
     Returns:
     - Function space consisting of three continuous Galerkin (CG) elements of degree 1.
     """
-    element = basix.ufl.mixed_element([
-        basix.ufl.element("CG", str(domain.ufl_cell()), 1)
-    ] * 3)  # Three-component mixed element (e.g., h, ux, uy in SWE)
+    element = basix.ufl.mixed_element(
+        [basix.ufl.element("CG", str(domain.ufl_cell()), 1), basix.ufl.element("CG", str(domain.ufl_cell()), 1, shape=(2,))]
+    )
 
-    return fem.functionspace(domain, element)
+    # Create the function space on the given mesh
+    V = fem.functionspace(domain, element)
+    return V
