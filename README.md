@@ -165,21 +165,21 @@ python main.py
     </td>
     <td align="center">
       <video width="250" controls>
-        <source src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/simulation_exp_without_bathymetry_CG.mp4" type="video/mp4">
+        <source src="https://drive.google.com/file/d/1sSBj288MSJ1-PuQOx2mpAKI8TERTMlPe/view?usp=sharing" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <br>
-      <b>🎥 <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/simulation_exp_without_bathymetry_CG.mp4">Video: Full Simulation</a></b>
+      <b>🎥 <a href="https://drive.google.com/file/d/1sSBj288MSJ1-PuQOx2mpAKI8TERTMlPe/view?usp=sharing">Video: Full Simulation</a></b>
     </td>
   </tr>
 </table>
 
 
 
-### ✅ Test 3 : SWEs on a 2D Sloped Beach (`Continuous Galerkin`)
+### ✅ Test Case Study 1 : SWEs on a 2D Sloped Beach (`Continuous Galerkin`)
 `Directory:` FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_CG
 
-`Details:` This test case evaluates SWEMniCS' wetting and drying capability using Kärna’s α scheme with a `CG` approach on a `13,800 m × 7,200 m` sloping beach. The `initial` water surface is `flat`, and a `harmonic tide (2m amplitude, 12h period)` is applied at the `open left` boundary, while `other` boundaries are `walls`. The simulation runs for `7 days`, using Manning’s friction `0.02` s/m<sup>1/3</sup>, and records elevations and velocities at `x = 9000 m, 11,000 m, and 13,500 m.`  --  `(Figure 6, 7, 8)`
+`Details:` This test case evaluates SWEMniCS' wetting and drying capability using Kärna’s α scheme with a `CG` approach on a `13,800 m × 7,200 m` sloping beach. The `initial` water surface is `flat`, and a `harmonic tide (2m amplitude, 12h period)` is applied at the `open left` boundary, while `other` boundaries are `walls`. The simulation runs for `7 days`, using Manning’s friction `0.02` s/m<sup>1/3</sup>, and records elevations and velocities at `x = 9000 m, 11,000 m, and 13,500 m.`
 
 `Run the script:`
 
@@ -264,17 +264,17 @@ python swe2d_sloped_beach_cg_main.py
 
 <h3 align="center">🎥 Full Simulation Video</h3>
 <p align="center">
-  <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4">
-    <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4" alt="Simulation Video" width="400">
+  <a href="https://drive.google.com/file/d/1eGYL2J2Qrgfv_kozJB67OOYfqGQVYyKK/view?usp=sharing">
+    <img src="https://drive.google.com/file/d/1eGYL2J2Qrgfv_kozJB67OOYfqGQVYyKK/view?usp=sharing" alt="Simulation Video" width="400">
   </a>
   <br>
-  <b>🎥 <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_CG/simulation_wetdry_ramp_weakform_as_swemnics_cg.mp4">Video: Full Simulation</a></b>
+  <b>🎥 <a href="https://drive.google.com/file/d/1eGYL2J2Qrgfv_kozJB67OOYfqGQVYyKK/view?usp=sharing">Video: Full Simulation</a></b>
 </p>
 
-### ✅ Test 4 : SWEs on a 2D Sloped Beach (`Discontinuous Galerkin`)
+### ✅ Test Case Study 2 : SWEs on a 2D Sloped Beach (`Discontinuous Galerkin`)
 `Directory:` FEniCS_Landlab/SWEs_2D_SlopedBeachProblem_SWEmniCS_DG
 
-`Details:` This test case evaluates SWEMniCS' wetting and drying capability using Kärna’s α scheme with a `DG` approach on a `13,800 m × 7,200 m` sloping beach. The `initial` water surface is `flat`, and a `harmonic tide (2m amplitude, 12h period)` is applied at the `open left` boundary, while `other` boundaries are `walls`. The simulation runs for `7 days`, using Manning’s friction `0.02` s/m<sup>1/3</sup>, and records elevations and velocities at `x = 9000 m, 11,000 m, and 13,500 m.`  --  `(Figure 9, 10, 11)`
+`Details:` This test case evaluates SWEMniCS' wetting and drying capability using Kärna’s α scheme with a `DG` approach on a `13,800 m × 7,200 m` sloping beach. The `initial` water surface is `flat`, and a `harmonic tide (2m amplitude, 12h period)` is applied at the `open left` boundary, while `other` boundaries are `walls`. The simulation runs for `7 days`, using Manning’s friction `0.02` s/m<sup>1/3</sup>, and records elevations and velocities at `x = 9000 m, 11,000 m, and 13,500 m.`
 
 `Run the script:`
 
@@ -359,9 +359,106 @@ python swe2d_sloped_beach_dg_main.py
 
 <h3 align="center">🎥 Full Simulation Video</h3>
 <p align="center">
-  <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/simulation_wetdry_ramp_weakform_as_swemnics_dg.mp4">
-    <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/simulation_wetdry_ramp_weakform_as_swemnics_dg.mp4" alt="Simulation Video" width="400">
+  <a href="https://drive.google.com/file/d/1kMRGNzSVy5nVHfbbiv38oP04piiggBKQ/view?usp=sharing">
+    <img src="https://drive.google.com/file/d/1kMRGNzSVy5nVHfbbiv38oP04piiggBKQ/view?usp=sharing" alt="Simulation Video" width="400">
   </a>
   <br>
-  <b>🎥 <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/SWEs2D_slopeBeach_DG/simulation_wetdry_ramp_weakform_as_swemnics_dg.mp4">Video: Full Simulation</a></b>
+  <b>🎥 <a href="https://drive.google.com/file/d/1kMRGNzSVy5nVHfbbiv38oP04piiggBKQ/view?usp=sharing">Video: Full Simulation</a></b>
+</p>
+
+
+### ✅ Test 3 : SWEs on Real DEM Bathymetry
+`Directory:` FEniCS_Landlab/Real_bathy_cg_exp
+
+`Details:` This test evaluates the finite element implementation of the shallow water equations using real-world bathymetry data. The bathymetry is obtained from a DEM file `dem_swe.tif` downloaded from `OpenTopography`. The experiment follows the same parameters as Test Case Study 1, with continuous Galerkin (CG) elements.
+The domain size from the dem data: `Lx = 7739.01 m, Ly = 14811.74 m`. The mesh resolution is set to: `nx = 6, ny = 12`
+
+`Run the script:`
+
+```sh
+cd FEniCS_Landlab/Real_bathy_cg_exp
+python main.py
+```
+
+<h2 align="center">🌊 Simulation Results</h2>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_1_water_surface_elevation.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_1_water_surface_elevation.png" alt="Output 1" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_1_water_surface_elevation.png">Figure 24: At station (6450, 2470)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_1_x_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_1_x_velocity.png" alt="Output 2" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_1_x_velocity.png">Figure 25: At station (6450, 2470)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_1_y_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_1_y_velocity.png" alt="Output 3" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_1_y_velocity.png">Figure 26: At station (6450, 2470)</a></b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_2_water_surface_elevation.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_2_water_surface_elevation.png" alt="Output 4" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_2_water_surface_elevation.png">Figure 27: At station (6450, 6180)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_2_x_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_2_x_velocity.png" alt="Output 5" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_2_x_velocity.png">Figure 28: At station (6450, 6180)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_2_y_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_2_y_velocity.png" alt="Output 6" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_2_y_velocity.png">Figure 29: At station (6450, 6180)</a></b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_3_water_surface_elevation.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_3_water_surface_elevation.png" alt="Output 7" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_3_water_surface_elevation.png">Figure 30: At station (6450, 11110)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_3_x_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_3_x_velocity.png" alt="Output 8" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_3_x_velocity.png">Figure 31: At station (6450, 11110)</a></b>
+    </td>
+    <td align="center">
+      <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_3_y_velocity.png">
+        <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_3_y_velocity.png" alt="Output 9" width="250">
+      </a>
+      <br>
+      <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/real_bathy_cg/station_3_y_velocity.png">Figure 32: At station (6450, 11110)</a></b>
+    </td>
+  </tr>
+</table>
+
+<h3 align="center">🎥 Full Simulation Video</h3>
+<p align="center">
+  <a href="https://drive.google.com/file/d/1kMRGNzSVy5nVHfbbiv38oP04piiggBKQ/view?usp=sharing">
+    <img src="https://drive.google.com/file/d/1kMRGNzSVy5nVHfbbiv38oP04piiggBKQ/view?usp=sharing" alt="Simulation Video" width="400">
+  </a>
+  <br>
+  <b>🎥 <a href="https://drive.google.com/file/d/1kMRGNzSVy5nVHfbbiv38oP04piiggBKQ/view?usp=sharing">Video: Full Simulation</a></b>
 </p>
