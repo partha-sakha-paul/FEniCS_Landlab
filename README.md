@@ -22,8 +22,10 @@
     Docker Desktop
     Dolfinx 0.10.0.0
     numpy
+    pandas
     matplotlib
     imageio
+    rasterio
 
 
 ## 🛠️ Installation and Setup
@@ -66,6 +68,14 @@ Run the following inside the current root of the container:
 ```sh
 pip install imageio
 pip install imageio[ffmpeg]
+pip install pandas
+pip install rasterio
+```
+
+Or directly:
+
+```sh
+pip install imageio imageio[ffmpeg] pandas rasterio
 ```
 ### 👉 Clone and Run the Repository
 To clone the repository, run in the current root:
@@ -164,14 +174,17 @@ python main.py
       <b>🖼️ <a href="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/results/exp_without_bathymtery_CG/station_(13500%2C%203650)_timeseries_exp_without_bathymetry_CG.png">Figure 5: At station (13500, 3650)</a></b>
     </td>
     <td align="center">
-      <video width="250" controls>
-        <source src="https://drive.google.com/file/d/1sSBj288MSJ1-PuQOx2mpAKI8TERTMlPe/view?usp=sharing" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <a href="https://drive.google.com/file/d/1sSBj288MSJ1-PuQOx2mpAKI8TERTMlPe/view?usp=sharing">
+        <img src="https://raw.githubusercontent.com/partha-sakha-paul/FEniCS_Landlab/main/images_logos/without_bathy_preview.png" 
+             alt="Simulation Video Preview" width="250">
+      </a>
       <br>
-      <b>🎥 <a href="https://drive.google.com/file/d/1sSBj288MSJ1-PuQOx2mpAKI8TERTMlPe/view?usp=sharing">Video: Full Simulation</a></b>
+      <b>🎥 <a href="https://drive.google.com/file/d/1sSBj288MSJ1-PuQOx2mpAKI8TERTMlPe/view?usp=sharing">
+        Video: Full Simulation
+      </a></b>
     </td>
-  </tr>
+</tr>
+
 </table>
 
 
@@ -265,7 +278,7 @@ python swe2d_sloped_beach_cg_main.py
 <h3 align="center">🎥 Full Simulation Video</h3>
 <p align="center">
   <a href="https://drive.google.com/file/d/1eGYL2J2Qrgfv_kozJB67OOYfqGQVYyKK/view?usp=sharing">
-    <img src="https://drive.google.com/file/d/1eGYL2J2Qrgfv_kozJB67OOYfqGQVYyKK/view?usp=sharing" alt="Simulation Video" width="400">
+    <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/images_logos/cgdg_slopeBeach_preview.png" alt="Simulation Video" width="400">
   </a>
   <br>
   <b>🎥 <a href="https://drive.google.com/file/d/1eGYL2J2Qrgfv_kozJB67OOYfqGQVYyKK/view?usp=sharing">Video: Full Simulation</a></b>
@@ -360,7 +373,7 @@ python swe2d_sloped_beach_dg_main.py
 <h3 align="center">🎥 Full Simulation Video</h3>
 <p align="center">
   <a href="https://drive.google.com/file/d/1kMRGNzSVy5nVHfbbiv38oP04piiggBKQ/view?usp=sharing">
-    <img src="https://drive.google.com/file/d/1kMRGNzSVy5nVHfbbiv38oP04piiggBKQ/view?usp=sharing" alt="Simulation Video" width="400">
+    <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/images_logos/cgdg_slopeBeach_preview.png" alt="Simulation Video" width="400">
   </a>
   <br>
   <b>🎥 <a href="https://drive.google.com/file/d/1kMRGNzSVy5nVHfbbiv38oP04piiggBKQ/view?usp=sharing">Video: Full Simulation</a></b>
@@ -457,7 +470,7 @@ python main.py
 <h3 align="center">🎥 Full Simulation Video</h3>
 <p align="center">
   <a href="https://drive.google.com/file/d/1fWCtLXz28H7qKamFh1M4qqHM27MezVMe/view?usp=sharing">
-    <img src="https://drive.google.com/file/d/1fWCtLXz28H7qKamFh1M4qqHM27MezVMe/view?usp=sharing" alt="Simulation Video" width="400">
+    <img src="https://github.com/partha-sakha-paul/FEniCS_Landlab/blob/main/images_logos/real_bathy_cg_preview.png" alt="Simulation Video" width="400">
   </a>
   <br>
   <b>🎥 <a href="https://drive.google.com/file/d/1fWCtLXz28H7qKamFh1M4qqHM27MezVMe/view?usp=sharing">Video: Full Simulation</a></b>
