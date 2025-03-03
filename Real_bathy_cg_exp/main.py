@@ -61,8 +61,8 @@ V = create_function_space(domain)
 # Assign bathymetry values to the mesh
 bathymetry = assign_bathymetry_to_mesh(domain, csv_file)
 
-# Now you can use bathymetry in further computations
-print("Assigned bathymetry values:", bathymetry.shape)
+# Now can use bathymetry in further computations
+# print("Assigned bathymetry values:", bathymetry.shape)
 
 # parameters and constants
 g = 9.81  

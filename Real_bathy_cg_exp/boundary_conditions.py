@@ -39,7 +39,7 @@ def initialize_boundary_conditions(V, W_open, domain, Lx, Ly):
     sub_dofs_h_open_left = fem.locate_dofs_geometrical(
         (V_boundary.sub(0), V_boundary.sub(0).collapse()[0]), open_boundary
     )[0]
-    print(sub_dofs_h_open_left)
+    # print(sub_dofs_h_open_left)
     # Locate boundary facets based on the defined conditions
     boundary_facets_open = locate_entities_boundary(domain, domain.topology.dim - 1, open_boundary)
     boundary_facets_wall = locate_entities_boundary(domain, domain.topology.dim - 1, wall_boundary)
